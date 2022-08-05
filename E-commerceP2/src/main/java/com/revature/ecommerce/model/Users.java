@@ -21,6 +21,7 @@ public class Users {
 	private int id;
 	private String email;
 	private String password;
+	private String role;
 	private boolean enabled;
 
 

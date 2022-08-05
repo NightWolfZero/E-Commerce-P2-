@@ -15,12 +15,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
-@Getter
-@Setter
-@NoArgsConstructor
-@ToString
+
 public class Products {
+
 	@Id
 	@GeneratedValue
 	private int id;
@@ -51,4 +48,5 @@ public class Products {
 	
 	
 	
+
 }
