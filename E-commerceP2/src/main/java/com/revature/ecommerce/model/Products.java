@@ -34,11 +34,10 @@ public class Products {
 	@Column(name="price")
 	private String pPrice;
 	private String stock;
-	@Transient
-	private MultipartFile pImage;
+	private String pImage;
 	
 	public Products(String pDescription, String pCategory, @NotEmpty String pManufacturer, String pName,
-			@NotNull String pPrice, String stock, MultipartFile pImage) {
+			@NotNull String pPrice, String stock, String pImage) {
 		super();
 		this.pDescription = pDescription;
 		this.pCategory = pCategory;

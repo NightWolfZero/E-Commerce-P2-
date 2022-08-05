@@ -1,5 +1,6 @@
 package com.revature.ecommerce.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,4 +12,6 @@ public interface UserRepository  extends JpaRepository<Users, Long> {
 
     Users findByUsername (String username);
     Optional<Users> findById (Long id);
+    
+    List<Users> getAllUsers();
 }
